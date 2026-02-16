@@ -38,7 +38,7 @@ export default function Navbar() {
   }
 
   return (
-    
+
     <div className="drawer">
       <input id="mobile-drawer" type="checkbox" className="drawer-toggle" />
 
@@ -77,9 +77,9 @@ export default function Navbar() {
           {/* DESKTOP MENU */}
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal gap-6 text-lg font-semibold">
-              <li><a>Beranda</a></li>
-              <li><a>Fitur Kami</a></li>
-              <li><a>Tentang Kami</a></li>
+              <li><a href="/">Beranda</a></li>
+              <li><a href="/#features">Fitur Kami</a></li>
+              <li><a href="/#about">Tentang Kami</a></li>
             </ul>
           </div>
 
@@ -93,9 +93,12 @@ export default function Navbar() {
               <ThemeIcon mode={theme} />
             </button>
 
-            <button className="btn btn-primary btn-sm font-semibold hidden sm:inline-flex">
-              Mulai
-            </button>
+            <a href="/login">
+              <button className="btn btn-primary btn-sm font-semibold hidden sm:inline-flex">
+                Mulai
+              </button>
+            </a>
+
           </div>
         </div>
       </div>
@@ -113,9 +116,12 @@ export default function Navbar() {
             <li><a>Tentang Kami</a></li>
           </ul>
 
-          <button className="btn btn-primary mt-6 w-full">
-            Mulai
-          </button>
+          <a href="/login">
+            <button className="btn btn-primary mt-6 w-full">
+              Mulai
+            </button>
+          </a>
+
         </aside>
       </div>
     </div>
