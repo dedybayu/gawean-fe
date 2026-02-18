@@ -2,7 +2,7 @@ export default function Landing() {
   return (
     <main>
       {/* HERO */}
-      <section className="hero min-h-[90vh] bg-base-100 relative overflow-hidden">
+      <section id="home" className="hero min-h-[90vh] bg-base-100 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
 
         <div className="hero-content text-center relative z-10">

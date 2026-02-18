@@ -1,9 +1,21 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Mencegah reload
+
+    // nanti di sini bisa tambahkan API login ke backend Golang
+
+    navigate("/dashboard");
+  };
+
   return (
     <main className="min-h-screen bg-base-200 flex items-center justify-center px-4 bg-gradient-to-br from-primary/20 to-secondary/20">
-      <div className="card w-full max-w-md bg-base-100 shadow-xl">
+      <div className="card w-full max-w-lg bg-base-100 shadow-xl">
         <div className="card-body">
-          
+
           {/* HEADER */}
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold">
@@ -15,8 +27,8 @@ export default function Login() {
           </div>
 
           {/* FORM */}
-          <form className="space-y-4">
-            
+          <form className="space-y-4" onSubmit={handleSubmit}>
+
             {/* Email */}
             <div className="form-control">
               <label className="label">
@@ -47,9 +59,10 @@ export default function Login() {
             </div>
 
             {/* Button */}
-            <button className="btn btn-primary w-full mt-4">
+            <button type="submit" className="btn btn-primary w-full mt-4">
               Masuk
             </button>
+
           </form>
 
           {/* Divider */}

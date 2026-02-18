@@ -17,7 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "auto"
-    setTheme(savedTheme)
+    // setTheme(savedTheme)
     applyTheme(savedTheme)
   }, [])
 
@@ -44,7 +44,7 @@ export default function Navbar() {
 
       {/* CONTENT */}
       <div className="drawer-content">
-        <div className="navbar bg-base-100 shadow-sm px-4">
+        <div className="navbar fixed top-0 left-0 w-full z-50 bg-base-100 shadow-sm px-4">
           {/* START */}
           <div className="navbar-start">
             {/* MOBILE BUTTON */}
@@ -77,7 +77,7 @@ export default function Navbar() {
           {/* DESKTOP MENU */}
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal gap-6 text-lg font-semibold">
-              <li><a href="/">Beranda</a></li>
+              <li><a href="/#home">Beranda</a></li>
               <li><a href="/#features">Fitur Kami</a></li>
               <li><a href="/#about">Tentang Kami</a></li>
             </ul>
@@ -111,9 +111,9 @@ export default function Navbar() {
           <h2 className="text-xl font-bold mb-6">Menu</h2>
 
           <ul className="space-y-2 text-lg font-semibold">
-            <li><a>Beranda</a></li>
-            <li><a>Fitur Kami</a></li>
-            <li><a>Tentang Kami</a></li>
+            <li><a href="/#home">Beranda</a></li>
+              <li><a href="/#features">Fitur Kami</a></li>
+              <li><a href="/#about">Tentang Kami</a></li>
           </ul>
 
           <a href="/login">
