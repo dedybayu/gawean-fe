@@ -1,16 +1,98 @@
-# React + Vite
+# Gawean 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Platform digital kanggo manajemen kerjoan.
 
-Currently, two official plugins are available:
+## 📌 Tentang Gawean
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Gawean** adalah aplikasi berbasis web untuk membantu pengguna mengelola pekerjaan dan tugas secara modern, terstruktur, dan ringan.
 
-## React Compiler
+Aplikasi ini berfungsi sebagai **task & project management sederhana**, mirip seperti OpenProject, namun dengan pendekatan yang lebih simpel, minimalis, dan mudah digunakan.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Gawean cocok untuk:
 
-## Expanding the ESLint configuration
+* 👤 Individu yang ingin mengatur tugas harian
+* 👥 Tim kecil yang ingin mengelola pekerjaan bersama
+* 🎯 Pengguna yang membutuhkan manajemen tugas tanpa kompleksitas berlebih
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Aplikasi ini memiliki:
+
+* Landing page
+* Sistem login
+* Dashboard pengguna setelah autentikasi
+* Dukungan multi-theme (Light / Dark / Auto)
+* Arsitektur scalable untuk pengembangan lebih lanjut
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React
+* React Router
+* Vite
+* Tailwind CSS
+* DaisyUI
+
+### Backend
+
+* Go (Golang)
+* REST API
+* JWT Authentication
+
+---
+
+## 🚀 Fitur Utama
+
+* 🔐 Login system
+* 🎨 Theme toggle (Light / Dark / Auto)
+* 📱 Responsive design
+* 🧭 Layout-based routing
+* 🏗 Clean architecture
+* ⚡ SPA navigation tanpa reload
+
+---
+
+## 🔧 Instalasi & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/dedybayu/gawean_fe.git
+cd gawean
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Jalankan Development Server
+
+```bash
+npm run dev
+```
+
+Aplikasi akan berjalan di:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔐 Authentication Flow
+
+1. User login
+2. Backend Golang validasi user
+3. Backend kirim JWT
+4. Token disimpan di localStorage
+5. Route `/dashboard` dilindungi oleh ProtectedRoute
+
+---
+
+
+
+
